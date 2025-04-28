@@ -14,6 +14,8 @@ header {
     color: #fff;
     text-align: center;
     padding: 1.5rem 1rem;
+    display: flex; 
+    flex-direction: column;
 }
 
 header h1 {
@@ -128,4 +130,68 @@ footer {
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #004080;
+}
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: relative;
+    /* display: inline-block; */
+    /* float: right;    margin-top: -3rem; */
+    margin-right: 1rem;
+}
+
+.menu-button {
+    background-color: #EA2F28;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-button:hover {
+    background-color: #7a1613;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #fff;
+    
+}
+
+.menu-list a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #004080;
+    text-decoration: none;
+}
+
+.menu-list a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show menu on hover */
+.dropdown-menu:hover .menu-list {
+    display: block;
 }
