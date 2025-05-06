@@ -6,91 +6,111 @@
     <title>We The People Meet</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      /* main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      } */
+      
+      /* section {
+        margin-bottom: 2rem;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+        }
+        
+        .hero h2 {
+          color: #2c3e50;
+          margin-bottom: 1rem;
+        border-bottom: none;
+      }
+
+      .hero p {
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+        } */
+        .hero {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        
+      }
+      .cta-button {
+        padding: 1rem 2rem;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 1.5rem;
+        transition: background-color 0.2s;
+        margin: 0 auto;
+      }
+
+      .cta-button:hover {
+        background: #0056b3;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div>
-        <h1><a href="/" id="home-link">We The People Meet</a></h1>
-        <p>
-          Bringing Americans together to protect the Constitution and find
-          common ground.
-        </p>
-      </div>
-      <nav class="dropdown-menu">
-        <ul class="">
-          <a href="/group-rules.html">Group Rules</a>
-          <span class="text-light"> | </span>
-          <a href="/meeting-notes-menu.html">Meeting Notes</a>
-          <!-- <li><a href="/blog.html">Blog</a></li> -->
-        </ul>
-      </nav>
-    </header>
+    <!-- Header will be loaded here -->
+    <div id="header-container"></div>
+
     <main>
-      <div class="main-img-container">
-        <img
-          src="wtp-logo.png"
-          alt="logo of red & blue tree with leaves of both colors."
-        />
-      </div>
-      <section class="about">
-        <h2>About Us</h2>
+      <section class="hero">
+        <h2>Welcome to We The People Meet</h2>
+        <img src="/wtp-logo.png" alt="We The People Meet Logo" style="width: 200px; height: 200px;object-fit: contain;">
         <p>
-          <strong>We The People Meet</strong> is a community-driven effort to
-          spark respectful conversations between Americans of all political
-          backgrounds.
+          Join us in our mission to protect the Constitution and find common ground through respectful dialogue. 
+          We believe in bringing Americans together to discuss important issues and work towards solutions that benefit everyone.
         </p>
-        <p>
-          Our mission is to build bridges across divides and renew our shared
-          commitment to the Constitution.
-        </p>
+        <a href="https://us06web.zoom.us/s/85022899035?pwd=y50w4FUobDbNyTAaMKvI4QAnvLTtrX.1" class="cta-button" target="_blank">
+          Join Our Next Meeting
+        </a>
       </section>
-      <section class="mission">
+
+      <section>
         <h2>Our Mission</h2>
         <p>
-          We aim to create a welcoming space where ideas can be shared, debated,
-          and refined through dialogue — not division.
-        </p>
-        <p>
-          By working together, we can ensure that the principles of the
-          Constitution continue to guide our nation forward.
+          We The People Meet is dedicated to fostering meaningful discussions about constitutional rights, 
+          government policies, and the challenges facing our nation. Through respectful dialogue and 
+          open-minded exchange of ideas, we work to find common ground and practical solutions.
         </p>
       </section>
-      <section class="cta">
-        <h2>Join Us</h2>
+
+      <section>
+        <h2>Meeting Information</h2>
         <p>
-          Be part of a growing community committed to bridging divides and
-          protecting our shared values.<br />
-        </p>
-      </section>
-      <section class="weekly-meeting">
-        <h2 class="text-red">Weekly Meeting</h2>
-        <h4>
-          <span class="text-dark">When:</span> Every Tuesday at 12:00 PM
-          Mountain Time
-        </h4>
-        <p>
-          Starting April 22, 2025, join us weekly for a virtual meeting.<br />
-          We’ll explore timely topics, share perspectives, and work toward
-          unity.<br />
-          Everyone is welcome — your voice matters.
+          We meet every Tuesday at 7:00 PM EST via Zoom. Our meetings are open to all who are interested 
+          in participating in constructive dialogue about important issues facing our nation.
         </p>
         <p>
-          <strong>Zoom Link:</strong>
-          <a
-            href="https://us06web.zoom.us/j/85022899035?pwd=y50w4FUobDbNyTAaMKvI4QAnvLTtrX.1"
-            target="_blank"
-            >Join the Meeting</a
-          >
-        </p>
-        <p>
-          <a class="text-center w-100 view-notes" href="/meeting-notes-menu.html"
-            >View Meeting Notes</a
-          >
+          To join our next meeting, click the button above or use the Zoom link in the footer.
         </p>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2025 We The People Meet. All rights reserved.</p>
-    </footer>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <!-- Load the component loader script -->
+    <script src="/components/load-components.js"></script>
   </body>
 </html>
